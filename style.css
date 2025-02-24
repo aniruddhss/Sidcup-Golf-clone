@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: #c7e40a #000;
-    box-sizing:border-box;  
+    box-sizing:border-box;
     font-family: 'montserrat';
     color: white;
+    
 
 }
 *::selection {
@@ -84,7 +83,6 @@ video{
     text-align: center;
     z-index: 10;
 }
-/* pseudoelements in css */
 
 
 #page1 h1{
@@ -440,3 +438,127 @@ video{
     line-height: 20px;
     margin-bottom: 8px;
   }
+
+  
+@media (max-width: 768px) {
+    #nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    #nav h4 {
+        font-size: 2vw;
+    }
+
+    #page1 h1 {
+        font-size: 10vw;
+    }
+
+    #page1 h2 {
+        font-size: 3vw;
+    }
+
+    #page1 p {
+        font-size: 2vw;
+        width: 80%;
+    }
+
+    #scroller h4 {
+        font-size: 60px;
+    }
+
+    #about-us {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    #about-us-in h3{
+        font-size: 2.5vw;
+    }
+    #about-us-in p{
+        padding: 0 30px;
+        font-size: 2vw;
+    }
+
+    #about-us img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #about-us-in {
+        width: 100%;
+    }
+
+    #card-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+
+    .card {
+        width: 40%;
+    }
+    .overlay {
+        padding: 10px;
+        padding-top: 50px;
+    }
+    .overlay h4 {
+        font-size: 15px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+    #green-div {
+        height: 20vh;
+        padding: 50px 20px;
+    }
+
+    #green-div h4 {
+        font-size: 10px;
+    }
+
+    #page3 > p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    #page4 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 10vh;
+    }
+
+    #page4 h1 {
+        text-align: center;
+        font-size: 60px;
+        top: -60%;
+    }
+
+    .elem {
+        width: 80%;
+    }
+
+    #footer {
+        display: flex;
+        height: 20vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #f1 h3 {
+        font-size: 2.2vw;
+    }
+
+    #f2 h4 {
+        font-size: 1.8vw;
+    }
+}
